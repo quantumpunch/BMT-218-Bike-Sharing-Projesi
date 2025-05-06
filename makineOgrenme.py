@@ -100,7 +100,7 @@ for name, model in models.items():
 # Sonuçları tabloya dök
 results_df = pd.DataFrame(results).sort_values(by="İsabetlilik (±10%)", ascending=False)
 
-# ---------- Görselleştirme (sadece matplotlib) ---------- #
+# ---------- Görselleştirme ---------- #
 fig, ax = plt.subplots(figsize=(12, 4))
 ax.axis('off')
 table = ax.table(cellText=results_df.round(4).values,
